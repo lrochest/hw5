@@ -230,9 +230,9 @@
       <h3>4. Describe three new problems Campus Customs might face that this agent team could solve with the tools you built</h3>
 
       <ul>
-        <li><b>a crest mug order.</b> 0 on hand, so inventory finds Elm City Gifts (3 day lead), accounting writes the order ($3.50 each) for me to sign and customer support drafts.</li>
-        <li><b>next month's rent.</b> lease 1 is now due 2026-10-02, so it's the same path as 102, checked against the $160 left.</li>
-        <li><b>bulk caps for another club.</b> 40 on hand, the boss offers up to 10% off ($19.80 instead of $22.00) with <code>check_discount</code> and customer support drafts.</li>
+        <li><b>another club wants a bulk deal.</b> if a group asks for 30 caps at a discount, CC-HAT-BLUE has 40 on hand, so inventory confirms stock, the boss approves up to 10% off ($19.80 instead of $22.00) with <code>check_discount</code> and customer support drafts the offer.</li>
+        <li><b>a customer wants a size that's sold out.</b> like the size S tee, inventory can use <code>list_stock</code> to find another size (CC-TEE-WHITE has 5 in M) and customer support drafts an offer for that size instead of making them wait on a reprint.</li>
+        <li><b>a new vendor bill goes overdue.</b> accounting finds it with <code>get_invoice</code> and <code>check_vendor_invoices</code>, asks a human to pay it so the vendor can ship again, and the payment is refused if it's more than the $160 left in checking.</li>
       </ul>
 
       <h3>5. Describe three new problems Campus Customs might face that this agent team could not solve with the tools you built, and explain the tools and agents you would need to solve them</h3>
