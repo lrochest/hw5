@@ -1,0 +1,22 @@
+# Secrets: copy .env.example to .env locally; never commit the real key
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / build
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Scratch and local-only files
+*.json.tmp
+.claude/
+.DS_Store
+data.zip
+joke.txt
+test_luna.py
